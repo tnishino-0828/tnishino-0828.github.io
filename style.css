@@ -67,6 +67,7 @@ picture {
 /* aタグのテキストカラーを親要素から継承と、ホバー時のアニメーション */
 a {
   color: inherit;
+  text-decoration: none;
 }
 @media screen and (min-width: 768px) {
   a {
@@ -93,398 +94,380 @@ a:hover, a:focus {
     -o-transition: all 0.5s;
     transition: all 0.5s;
   }
-}/*# sourceMappingURL=style.css.map */
-
-
+}
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
-a {
-  text-decoration: none;
-}
-
-section.gallery-dl {
-  background-color: #050507;
-}
-section.gallery-dl div.keyvisual div.lists {
-  display: flex;
-}
-section.gallery-dl div.keyvisual div.lists div.image img {
-  width: 100%;
-}
-section.gallery-dl div.title {
-  text-align: center;
-}
-section.gallery-dl div.title h1 {
-  font-size: 38px;
-  line-height: 48px;
-  letter-spacing: 0;
-  color: #FFFFFF;
+h1 {
+  font-size: 14px;
 }
 @media (min-width: 768px) {
-  section.gallery-dl div.title h1 {
-    font-size: 100px;
-    line-height: 125px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  section.gallery-dl div.title h1 {
-    font-size: 63px;
-    line-height: 72px;
-  }
-}
-section.gallery-dl div.information {
-  text-align: center;
-}
-section.gallery-dl div.information h2 {
-  font-size: 27px;
-  line-height: 48px;
-  letter-spacing: 0;
-  color: #FFFFFF;
-  position: relative;
-  display: inline-block;
-}
-@media (min-width: 768px) {
-  section.gallery-dl div.information h2 {
-    font-size: 60px;
-    line-height: 125px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  section.gallery-dl div.information h2 {
-    font-size: 53px;
-    line-height: 96px;
-  }
-}
-section.gallery-dl div.information h2::after {
-  position: absolute;
-  content: "";
-  background-color: #FFFFFF;
-  width: 100%;
-  height: 1px;
-  left: 50%;
-  bottom: 25%;
-  transform: translateX(-50%);
-}
-section.gallery-dl div.information div.text div.schedule_en {
-  line-height: 24px;
-  letter-spacing: 0;
-  color: #FFFFFF;
-}
-@media (min-width: 768px) {
-  section.gallery-dl div.information div.text div.schedule_en {
-    font-size: 20px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  section.gallery-dl div.information div.text div.schedule_en {
-    font-size: 17px;
-  }
-}
-section.gallery-dl div.information div.text div.place {
-  font-size: 27px;
-  font-weight: bold;
-  line-height: 24px;
-  letter-spacing: 0;
-  color: #FFFFFF;
-}
-@media (min-width: 768px) {
-  section.gallery-dl div.information div.text div.place {
-    font-size: 40px;
-    line-height: 48px;
-  }
-}
-section.gallery-dl div.information div.text div.schedule_ja {
-  line-height: 24px;
-  letter-spacing: 0;
-  color: #FFFFFF;
-}
-@media (min-width: 768px) {
-  section.gallery-dl div.information div.text div.schedule_ja {
-    font-size: 18px;
-  }
-}
-section.gallery-dl div.gallery {
-  text-align: center;
-}
-@media (min-width: 768px) {
-  section.gallery-dl div.gallery {
-    width: 800px;
-    margin: 0 auto;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  section.gallery-dl div.gallery {
-    width: initial;
-  }
-}
-section.gallery-dl div.gallery h2 {
-  font-size: 27px;
-  line-height: 48px;
-  letter-spacing: 0;
-  color: #FFFFFF;
-  position: relative;
-  display: inline-block;
-}
-@media (min-width: 768px) {
-  section.gallery-dl div.gallery h2 {
-    font-size: 60px;
-    line-height: 125px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  section.gallery-dl div.gallery h2 {
-    font-size: 53px;
-    line-height: 96px;
-  }
-}
-section.gallery-dl div.gallery h2::after {
-  position: absolute;
-  content: "";
-  background-color: #FFFFFF;
-  width: 100%;
-  height: 1px;
-  left: 50%;
-  bottom: 25%;
-  transform: translateX(-50%);
-}
-@media (min-width: 768px) {
-  section.gallery-dl div.gallery div.flower div.image img {
-    width: 48%;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  section.gallery-dl div.gallery div.flower div.image img {
-    width: 100%;
-  }
-}
-@media (min-width: 768px) {
-  section.gallery-dl div.gallery div.flower div.image:nth-child(odd) {
-    text-align: left;
-  }
-}
-@media (min-width: 768px) {
-  section.gallery-dl div.gallery div.flower div.image:nth-child(even) {
-    text-align: right;
-  }
-}
-section.gallery-dl div.gallery div.flower div.image + .image {
-  margin-top: 30px;
-}
-section.gallery-dl div.access {
-  text-align: center;
-  position: relative;
-}
-section.gallery-dl div.access div.text h2 {
-  font-size: 27px;
-  line-height: 48px;
-  letter-spacing: 0;
-  color: #FFFFFF;
-  position: relative;
-  display: inline-block;
-}
-@media (min-width: 768px) {
-  section.gallery-dl div.access div.text h2 {
-    font-size: 60px;
-    line-height: 125px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  section.gallery-dl div.access div.text h2 {
-    font-size: 53px;
-    line-height: 96px;
-  }
-}
-section.gallery-dl div.access div.text h2::after {
-  position: absolute;
-  content: "";
-  background-color: #FFFFFF;
-  width: 100%;
-  height: 1px;
-  left: 50%;
-  bottom: 25%;
-  transform: translateX(-50%);
-}
-section.gallery-dl div.access div.text div.hall {
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 24px;
-  letter-spacing: 0;
-  color: #FFFFFF;
-}
-@media (min-width: 768px) {
-  section.gallery-dl div.access div.text div.hall {
-    font-size: 28px;
-    line-height: 36px;
-  }
-}
-section.gallery-dl div.access div.text div.address {
-  line-height: 23.2px;
-  letter-spacing: 0;
-  color: #FFFFFF;
-}
-@media (min-width: 768px) {
-  section.gallery-dl div.access div.text div.address {
+  h1 {
     font-size: 16px;
   }
 }
-section.gallery-dl div.access div.text div.mail {
-  line-height: 23.2px;
-  letter-spacing: 0;
-  color: #FFFFFF;
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #FFFFFF;
+  z-index: 2;
 }
-section.gallery-dl div.access div.text div.map a {
-  line-height: 60px;
-  letter-spacing: 0;
-  color: #FFFFFF;
-  border: 1px solid #FFFFFF;
-  padding: 16px 82px;
+header div.headerin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
 }
-section.gallery-dl div.contact {
+header div.headerin h1 a img {
+  width: 117px;
+  object-fit: contain;
+}
+div.keyvisual video {
+  width: 100%;
+  height: 100vh;
+  max-height: 505px;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  div.keyvisual video {
+    max-height: 600px;
+  }
+}
+
+section.contents {
+  margin-top: 80px;
+}
+@media (min-width: 768px) {
+  section.contents {
+    margin-top: 100px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.contents {
+    margin-top: 90px;
+  }
+}
+section.contents div.pickup div.heading div.container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 25px;
   text-align: center;
 }
-section.gallery-dl div.contact h2 {
-  font-size: 27px;
-  line-height: 48px;
-  letter-spacing: 0;
-  color: #FFFFFF;
-  position: relative;
-  display: inline-block;
-}
 @media (min-width: 768px) {
-  section.gallery-dl div.contact h2 {
-    font-size: 60px;
-    line-height: 125px;
+  section.contents div.pickup div.heading div.container h2 {
+    font-size: 36px;
+    line-height: 40px;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  section.gallery-dl div.contact h2 {
-    font-size: 53px;
-    line-height: 96px;
+  section.contents div.pickup div.heading div.container h2 {
+    font-size: 30px;
+    line-height: 30px;
   }
 }
-section.gallery-dl div.contact h2::after {
-  position: absolute;
-  content: "";
-  background-color: #FFFFFF;
-  width: 100%;
-  height: 1px;
-  left: 50%;
-  bottom: 25%;
-  transform: translateX(-50%);
-}
-section.gallery-dl div.contact div.exhibition a {
-  line-height: 23.2px;
-  letter-spacing: 0;
-  color: #FFFFFF;
-  border: 1px solid #FFFFFF;
-  width: 100%;
-  display: block;
-  margin: 0 auto;
-  padding: 24px 32px;
-}
-@media (min-width: 768px) {
-  section.gallery-dl div.contact div.exhibition a {
-    width: 380px;
-    position: relative;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  section.gallery-dl div.contact div.exhibition a {
-    font-size: 15px;
-    width: 100%;
-  }
-}
-@media (min-width: 768px) {
-  section.gallery-dl div.contact div.exhibition a::before {
-    position: absolute;
-    content: "";
-    background-color: #FFF;
-    width: 120px;
-    height: 1px;
-    right: -50px;
-    bottom: 50%;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  section.gallery-dl div.contact div.exhibition a::before {
-    position: initial;
-  }
-}
-@media (min-width: 768px) {
-  section.gallery-dl div.contact div.exhibition a::after {
-    position: absolute;
-    content: "";
-    background-color: #FFF;
-    width: 15px;
-    height: 1px;
-    transform: rotate(45deg);
-    right: -52px;
-    bottom: 58%;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  section.gallery-dl div.contact div.exhibition a::after {
-    position: initial;
-  }
-}
-section.gallery-dl div.contact div.forvisitor {
+section.contents div.pickup div.slider_lists {
   margin-top: 20px;
 }
-section.gallery-dl div.contact div.forvisitor a {
-  line-height: 23.2px;
-  letter-spacing: 0;
-  color: #FFFFFF;
-  border: 1px solid #FFFFFF;
-  width: 100%;
-  display: block;
-  margin: 0 auto;
-  padding: 24px 32px;
-}
 @media (min-width: 768px) {
-  section.gallery-dl div.contact div.forvisitor a {
-    width: 380px;
-    position: relative;
+  section.contents div.pickup div.slider_lists {
+    margin-top: 30px;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  section.gallery-dl div.contact div.forvisitor a {
-    font-size: 15px;
+  section.contents div.pickup div.slider_lists {
+    margin-top: 25px;
+  }
+}
+section.contents div.pickup div.slider_lists div.swiper.slider div.swiper-wrapper div.swiper-slide img {
+  height: 156px;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  section.contents div.pickup div.slider_lists div.swiper.slider div.swiper-wrapper div.swiper-slide img {
+    height: 240px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.contents div.pickup div.slider_lists div.swiper.slider div.swiper-wrapper div.swiper-slide img {
+    height: 198px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+  section.contents div.pickup div.slider_lists div.swiper.slider div.swiper-wrapper div.swiper-slide img {
+    height: 198px;
+  }
+}
+section.contents div.feature {
+  margin-top: 100px;
+}
+section.contents div.feature div.heading div.container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 25px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  section.contents div.feature div.heading div.container h2 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.contents div.feature div.heading div.container h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+section.contents div.feature div.description {
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  section.contents div.feature div.description {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.contents div.feature div.description {
+    margin-top: 25px;
+  }
+}
+@media (min-width: 768px) {
+  section.contents div.feature div.description div.container div.lists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.contents div.feature div.description div.container div.lists {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 21px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+  section.contents div.feature div.description div.container div.lists {
+    gap: 21px;
+  }
+}
+section.contents div.feature div.description div.container div.lists div.item div.image {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1607843137);
+}
+section.contents div.feature div.description div.container div.lists div.item div.image img {
+  width: 100%;
+  height: 229px;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  section.contents div.feature div.description div.container div.lists div.item div.image img {
+    height: 257px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.contents div.feature div.description div.container div.lists div.item div.image img {
+    height: 243px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+  section.contents div.feature div.description div.container div.lists div.item div.image img {
+    height: 229px;
+  }
+}
+section.contents div.feature div.description div.container div.lists div.item div.text {
+  border: 2px solid #CCCCCC;
+  padding: 16px;
+}
+@media (min-width: 768px) {
+  section.contents div.feature div.description div.container div.lists div.item div.text {
+    padding: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.contents div.feature div.description div.container div.lists div.item div.text {
+    padding: 21px;
+  }
+}
+section.contents div.feature div.description div.container div.lists div.item div.text div.category {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+}
+section.contents div.feature div.description div.container div.lists div.item div.text div.comment {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-top: 16px;
+}
+section.contents div.feature div.description div.container div.lists div.item div.text div.number {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: right;
+  margin-top: 18px;
+}
+section.contents div.feature div.description div.container div.lists div.item + .item {
+  margin-top: 26px;
+}
+@media (min-width: 768px) {
+  section.contents div.feature div.description div.container div.lists div.item + .item {
+    margin-top: initial;
+  }
+}
+
+section.contact {
+  background-color: #121212;
+  margin-top: 80px;
+}
+@media (min-width: 768px) {
+  section.contact {
+    margin-top: 60px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.contact {
+    margin-top: 70px;
+  }
+}
+section.contact div.heading {
+  padding-top: 73px;
+}
+@media (min-width: 768px) {
+  section.contact div.heading {
+    padding-top: 50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.contact div.heading {
+    padding-top: 62px;
+  }
+}
+section.contact div.heading div.container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  section.contact div.heading div.container h2 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.contact div.heading div.container h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+section.contact div.mail {
+  margin-top: 13px;
+}
+@media (min-width: 768px) {
+  section.contact div.mail {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.contact div.mail {
+    margin-top: 22px;
+  }
+}
+@media (min-width: 768px) {
+  section.contact div.mail div.container div.mailform {
+    display: flex;
+    gap: 112px;
+  }
+}
+section.contact div.mail div.container div.mailform div.text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  section.contact div.mail div.container div.mailform div.text {
+    flex: 1;
+  }
+}
+section.contact div.mail div.container div.mailform div.data {
+  margin-top: 38px;
+}
+@media (min-width: 768px) {
+  section.contact div.mail div.container div.mailform div.data {
+    flex: 1;
+    margin-top: initial;
+  }
+}
+section.contact div.mail div.container div.mailform div.data div.lists div.item span.name {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+section.contact div.mail div.container div.mailform div.data div.lists div.item div.input input {
+  width: 100%;
+}
+section.contact div.mail div.container div.mailform div.data div.lists div.item div.input textarea {
+  width: 100%;
+}
+section.contact div.mail div.container div.mailform div.data div.lists div.item + .item {
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  section.contact div.mail div.container div.mailform div.data div.lists div.item + .item {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.contact div.mail div.container div.mailform div.data div.lists div.item + .item {
+    margin-top: 18px;
+  }
+}
+section.contact div.mail div.container div.mailform div.data div.send_button {
+  margin-top: 20px;
+}
+section.contact div.mail div.container div.mailform div.data div.send_button button {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #FFFFFF;
+  background-color: #121212;
+  border: 1px solid #FFFFFF;
+  width: 100%;
+  padding: 8px 0;
+}
+@media (min-width: 768px) {
+  section.contact div.mail div.container div.mailform div.data div.send_button button {
+    width: 200px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.contact div.mail div.container div.mailform div.data div.send_button button {
     width: 100%;
   }
 }
+
+footer {
+  background-color: #121212;
+  text-align: center;
+  padding: 86px 0 8px;
+}
 @media (min-width: 768px) {
-  section.gallery-dl div.contact div.forvisitor a::before {
-    position: absolute;
-    content: "";
-    background-color: #FFF;
-    width: 120px;
-    height: 1px;
-    right: -50px;
-    bottom: 50%;
+  footer {
+    padding: 60px 0 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  section.gallery-dl div.contact div.forvisitor a::before {
-    position: initial;
+  footer {
+    padding: 73px 0 9px;
   }
 }
-@media (min-width: 768px) {
-  section.gallery-dl div.contact div.forvisitor a::after {
-    position: absolute;
-    content: "";
-    background-color: #FFF;
-    width: 15px;
-    height: 1px;
-    transform: rotate(45deg);
-    right: -52px;
-    bottom: 58%;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  section.gallery-dl div.contact div.forvisitor a::after {
-    position: initial;
-  }
-}/*# sourceMappingURL=240819.css.map */
+footer div.footerin div.container div.text {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */
