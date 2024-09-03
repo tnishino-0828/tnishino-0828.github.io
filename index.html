@@ -8,49 +8,50 @@
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- 追加のCSSファイルはこの下に配置。順番に気をつける -->
+    <link href="css/swiper-bundle.min.css" rel="stylesheet">
     <link href="css/pushbar.min.css" rel="stylesheet">
+
     <link href="css/style.css" rel="stylesheet">
 
     <title>サイトのタイトル</title>
   </head>
   <body>
-    <div data-pushbar-id="mypushbar" data-pushbar-direction="top">
-      <div class="headerin">
-        <h1>
-          <a href="/">
-            FA EXHIBITION
-          </a>
-        </h1>
-        <button data-pushbar-close="">
-          <span></span>
-          <span></span>
-        </button>
-      </div>
+    <div data-pushbar-id="mypushbar" data-pushbar-direction="left">
+      <button class="close" data-pushbar-close>
+        ×
+      </button>
       <div class="menubox">
-        <div class="lists">
+        <div class="pagelink">
           <div class="item">
-            <a href="#">
-              TOP
+            <a href="#pickup">
+              PICK UP
             </a>
           </div>
           <div class="item">
-            <a href="#">
-              INFORMATION
+            <a href="#feature">
+              FEATURE
             </a>
           </div>
           <div class="item">
-            <a href="#">
-              GALLERY
-            </a>
-          </div>
-          <div class="item">
-            <a href="#">
-              ACCESS
-            </a>
-          </div>
-          <div class="item">
-            <a href="#">
+            <a href="#contact">
               CONTACT
+            </a>
+          </div>
+        </div>
+        <div class="sns">
+          <div class="type">
+            <a href="https://twitter.com/home" target="_blank">
+              Twitter
+            </a>
+          </div>
+          <div class="type">
+            <a href="https://www.facebook.com/" target="_blank">
+              facebook
+            </a>
+          </div>
+          <div class="type">
+            <a href="https://www.instagram.com/" target="_blank">
+              instagram
             </a>
           </div>
         </div>
@@ -60,157 +61,293 @@
       <div class="headerin">
         <h1>
           <a href="/">
-            FA EXHIBITION
+            <img src="img/logo.png" width="175" height="40" alt="">
           </a>
         </h1>
-        <button class="button" data-pushbar-target="mypushbar">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <div class="pushbarbox">
+          <a class="button" data-pushbar-target="mypushbar">
+            <img src="img/pushbarbox_icon.png" widht="30" height="22" alt="">
+          </a>
+        </div>
       </div>
     </header>
-    <section class="gallery-dl">
+
+    <main>
       <div class="keyvisual">
-        <div class="lists">
-          <div class="image">
-            <img src="img/mainvisual1.jpg" width="1200" height="1800" alt="">
-          </div>
-          <div class="image">
-            <img src="img/mainvisual2.jpg" width="1200" height="1800" alt="">
-          </div>
-          <div class="image">
-            <img src="img/mainvisual3.jpg" width="1200" height="1800" alt="">
-          </div>
-        </div>
+        <video src="video/video.mp4" autoplay muted loop></video>
       </div>
-      <div class="title container">
-        <h1>
-          Hello Flower!<br>FA EXHIBITION 2021
-        </h1>
-      </div>
-      <div class="information container">
-        <h2>
-          INFORMATION
-        </h2>
-        <div class="text">
-          <div class="schedule_en">
-            <div class="date">
-              2021 JUL 1(THU)-3(SAT)
-            </div>
-            <div class="time">
-              DAY1 10am-6pm OTHER 10am-5:30pm
+  
+      <section class="contents">
+        <div class="pickup" id="pickup">
+          <div class="heading">
+            <div class="container">
+              <h2>PICK UP</h2>
             </div>
           </div>
-          <div class="place">
-            at PARK SIDE HALL
-          </div>
-          <div class="schedule_ja">
-            2021年7月1日(木)ー3日(土)<br>Day1 10時〜18時　その他 10時〜17時30分
-          </div>
-        </div>
-      </div>
-      <div class="gallery container">
-        <h2>
-          GALLERY
-        </h2>
-        <div class="flower">
-          <div class="image">
-            <img src="img/flower1.jpg" width="800" height="1100" alt="">
-          </div>
-          <div class="image">
-            <img src="img/flower2.jpg" width="800" height="530" alt="">
-          </div>
-          <div class="image">
-            <img src="img/flower3.jpg" width="800" height="800" alt="">
-          </div>
-          <div class="image">
-            <img src="img/flower4.jpg" width="800" height="1200" alt="">
-          </div>
-          <div class="image">
-            <img src="img/flower5.jpg" width="800" height="1000" alt="">
-          </div>
-          <div class="image">
-            <img src="img/flower6.jpg" width="800" height="530" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="access">
-        <div class="text container">
-          <h2>
-            ACCESS
-          </h2>
-          <div class="hall">
-            PARK SIDE HALL
-          </div>
-          <div class="address">
-            〒152-0035 東京都目黒区自由が丘1-1-1 PARK SIDE HALL<br>PARK SIDE HALL, 1-1-1 Jiyugaoka, Meguro-ku, Tokyo
-          </div>
-          <div class="mail">
-            Tel: 03-1111-1111<br>E-mail: info@xxxxxxx.jp
-          </div>
-          <div class="map">
-            <a href="#">
-              GOOGLE MAP
-            </a>
+          <div class="slider_lists">
+            <div class="swiper slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/pickup1.jpg" width="630" height="420" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/pickup2.jpg" width="630" height="420" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/pickup3.jpg" width="630" height="420" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/pickup4.jpg" width="630" height="420" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/pickup5.jpg" width="630" height="420" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/pickup6.jpg" width="630" height="420" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/pickup7.jpg" width="630" height="420" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/pickup8.jpg" width="630" height="420" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/pickup9.jpg" width="630" height="420" alt="">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="contact container">
-        <h2>
-          CONTACT
-        </h2>
-        <div class="exhibition">
-          <a href="#">
-            出展に関するお問い合わせ
-          </a>
+        <div class="feature" id="feature">
+          <div class="heading">
+            <div class="container">
+              <h2>
+                FEATURE
+              </h2>
+            </div>
+          </div>
+          <div class="description">
+            <div class="container">
+              <div class="lists">
+                <div class="item">
+                  <div class="image">
+                    <img src="img/feature1.jpg" width="630" height="420" alt="">
+                  </div>
+                  <div class="text">
+                    <div class="category">
+                      category
+                    </div>
+                    <div class="comment">
+                      テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </div>
+                    <div class="number">
+                      XXXX.XX.XX
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="image">
+                    <img src="img/feature2.jpg" width="630" height="420" alt="">
+                  </div>
+                  <div class="text">
+                    <div class="category">
+                      category
+                    </div>
+                    <div class="comment">
+                      テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </div>
+                    <div class="number">
+                      XXXX.XX.XX
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="image">
+                    <img src="img/feature3.jpg" width="630" height="420" alt="">
+                  </div>
+                  <div class="text">
+                    <div class="category">
+                      category
+                    </div>
+                    <div class="comment">
+                      テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </div>
+                    <div class="number">
+                      XXXX.XX.XX
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="image">
+                    <img src="img/feature4.jpg" width="630" height="420" alt="">
+                  </div>
+                  <div class="text">
+                    <div class="category">
+                      category
+                    </div>
+                    <div class="comment">
+                      テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </div>
+                    <div class="number">
+                      XXXX.XX.XX
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="image">
+                    <img src="img/feature5.jpg" width="630" height="420" alt="">
+                  </div>
+                  <div class="text">
+                    <div class="category">
+                      category
+                    </div>
+                    <div class="comment">
+                      テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </div>
+                    <div class="number">
+                      XXXX.XX.XX
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="image">
+                    <img src="img/feature6.jpg" width="630" height="420" alt="">
+                  </div>
+                  <div class="text">
+                    <div class="category">
+                      category
+                    </div>
+                    <div class="comment">
+                      テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </div>
+                    <div class="number">
+                      XXXX.XX.XX
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="image">
+                    <img src="img/feature7.jpg" width="630" height="420" alt="">
+                  </div>
+                  <div class="text">
+                    <div class="category">
+                      category
+                    </div>
+                    <div class="comment">
+                      テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </div>
+                    <div class="number">
+                      XXXX.XX.XX
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="image">
+                    <img src="img/feature8.jpg" width="630" height="420" alt="">
+                  </div>
+                  <div class="text">
+                    <div class="category">
+                      category
+                    </div>
+                    <div class="comment">
+                      テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </div>
+                    <div class="number">
+                      XXXX.XX.XX
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="image">
+                    <img src="img/feature9.jpg" width="630" height="420" alt="">
+                  </div>
+                  <div class="text">
+                    <div class="category">
+                      category
+                    </div>
+                    <div class="comment">
+                      テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </div>
+                    <div class="number">
+                      XXXX.XX.XX
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="forvisitor">
-          <a href="#">
-            その他のお問い合わせ
-          </a>
+      </section>
+  
+      <section class="contact" id="contact">
+        <div class="heading">
+          <div class="container">
+            <h2>
+              CONTACT
+            </h2>
+          </div>
         </div>
-      </div>
-    </section>
+        <div class="mail">
+          <div class="container">
+            <div class="mailform">
+              <div class="text">
+                <p>
+                  テキストテキストテキスト
+                </p>
+                <p>
+                  テキストテキストテキストテキストテキストテキストテキストテキストテキストテ<br>
+                  キストテキストテキストテキストテキストテキストテキストテキストテキストテキ<br>
+                  ストテキストテキストテキストテキストテキストテキストテキストテキスト
+                </p>
+                <p>
+                  テキストテキストテキストテキストテキストテキストテキストテキストテキストテ<br>
+                  キストテキストテキストテキストテキストテキストテキストテキストテキストテキ<br>
+                  ストテキストテキストテキストテキストテキストテキストテキストテキスト
+                </p>
+              </div>
+              <div class="data">
+                <div class="lists">
+                  <div class="item">
+                    <span class="name">
+                      Name:
+                    </span>
+                    <div class="input">
+                      <input type="text">
+                    </div>
+                  </div>
+                  <div class="item">
+                    <span class="name">
+                      Mail:
+                    </span>
+                    <div class="input">
+                      <input type="text">
+                    </div>
+                  </div>
+                  <div class="item">
+                    <span class="name">
+                      Message:
+                    </span>
+                    <div class="input">
+                      <textarea name=""></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="send_button">
+                  <button>
+                    SEND
+                  </button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <footer>
       <div class="footerin">
-        <div class="information">
-          <div class="address">
-            FA exhibition<br>
-            〒152-0035 東京都目黒区自由が丘1-1-1 PARK SIDE HALL<br>
-            <div class="tel">
-              Tel: <a href="tel:03-1111-1111">03-1111-1111</a>
-            </div>
-            <div class="mail">
-              E-mail: info@xxxxxxx.jp
-            </div>
-          </div>
-          <div class="sns">
-            <div class="item">
-              <a href="#">
-                Twitter
-              </a>
-            </div>
-            <div class="item">
-              <a href="#">
-                Facebook
-              </a>
-            </div>
-            <div class="item">
-              <a href="#">
-                Instagram
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="link">
-          <div class="policy">
-            <a href="#">
-              PRIVACY POLICY
-            </a>
-          </div>
-          <div class="copyright">
-            © FA EXHIBITION
+        <div class="container">
+          <div class="text">
+            © Sneakers
           </div>
         </div>
       </div>
@@ -223,6 +360,41 @@
       new Pushbar({
         blur: true,
         overlay: true,
+      });
+    </script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+      const slider = new Swiper('.slider', {
+        speed: 400,
+        slidesPerView: 1.5,
+        spaceBetween: 10,
+        centeredSlides: true,
+        loop: true,
+
+        breakpoints: {
+          425: {
+            slidesPerView: 1.5,
+            spaceBetween: 20
+          },
+          768: {
+            slidesPerView: 2.3,
+            spaceBetween: 30
+          },
+          1024: {
+            slidesPerView: 3.6,
+            spaceBetween: 40
+          },
+        }
+      });
+    </script>
+    <script>
+      window.addEventListener('click', function() {
+        var pushbarbox = document.querySelector('.pushbarbox');
+        if (pushbarbox) {
+          pushbarbox.addEventListener('click', function() {
+              pushbarbox.style.display = 'none';
+          });
+      }
       });
     </script>
   </body>
