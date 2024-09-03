@@ -1,0 +1,490 @@
+@charset "UTF-8";
+/* bodyのデフォルトを定義 */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.8;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", Meiryo, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  font-feature-settings: "palt";
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* marginとpaddingを削除 */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* pが連続したら段落を空ける */
+p + p {
+  margin-top: 1em;
+}
+
+/* list-styleを削除 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* imgとpictureタグの設定 */
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+/* 各ブラウザやOSの設定で動きの制限をしている場合、すべてのアニメーションとトランジションを削除 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* aタグのテキストカラーを親要素から継承と、ホバー時のアニメーション */
+a {
+  color: inherit;
+}
+@media screen and (min-width: 768px) {
+  a {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+}
+a:hover, a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+@media screen and (min-width: 768px) {
+  a:hover, a:focus {
+    opacity: 0.7;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  a:hover img {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+}/*# sourceMappingURL=style.css.map */
+
+
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+section.gallery-dl {
+  background-color: #050507;
+}
+section.gallery-dl div.keyvisual div.lists {
+  display: flex;
+}
+section.gallery-dl div.keyvisual div.lists div.image img {
+  width: 100%;
+}
+section.gallery-dl div.title {
+  text-align: center;
+}
+section.gallery-dl div.title h1 {
+  font-size: 38px;
+  line-height: 48px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  section.gallery-dl div.title h1 {
+    font-size: 100px;
+    line-height: 125px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.gallery-dl div.title h1 {
+    font-size: 63px;
+    line-height: 72px;
+  }
+}
+section.gallery-dl div.information {
+  text-align: center;
+}
+section.gallery-dl div.information h2 {
+  font-size: 27px;
+  line-height: 48px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  position: relative;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  section.gallery-dl div.information h2 {
+    font-size: 60px;
+    line-height: 125px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.gallery-dl div.information h2 {
+    font-size: 53px;
+    line-height: 96px;
+  }
+}
+section.gallery-dl div.information h2::after {
+  position: absolute;
+  content: "";
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 1px;
+  left: 50%;
+  bottom: 25%;
+  transform: translateX(-50%);
+}
+section.gallery-dl div.information div.text div.schedule_en {
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  section.gallery-dl div.information div.text div.schedule_en {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.gallery-dl div.information div.text div.schedule_en {
+    font-size: 17px;
+  }
+}
+section.gallery-dl div.information div.text div.place {
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  section.gallery-dl div.information div.text div.place {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+section.gallery-dl div.information div.text div.schedule_ja {
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  section.gallery-dl div.information div.text div.schedule_ja {
+    font-size: 18px;
+  }
+}
+section.gallery-dl div.gallery {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  section.gallery-dl div.gallery {
+    width: 800px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.gallery-dl div.gallery {
+    width: initial;
+  }
+}
+section.gallery-dl div.gallery h2 {
+  font-size: 27px;
+  line-height: 48px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  position: relative;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  section.gallery-dl div.gallery h2 {
+    font-size: 60px;
+    line-height: 125px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.gallery-dl div.gallery h2 {
+    font-size: 53px;
+    line-height: 96px;
+  }
+}
+section.gallery-dl div.gallery h2::after {
+  position: absolute;
+  content: "";
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 1px;
+  left: 50%;
+  bottom: 25%;
+  transform: translateX(-50%);
+}
+@media (min-width: 768px) {
+  section.gallery-dl div.gallery div.flower div.image img {
+    width: 48%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.gallery-dl div.gallery div.flower div.image img {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  section.gallery-dl div.gallery div.flower div.image:nth-child(odd) {
+    text-align: left;
+  }
+}
+@media (min-width: 768px) {
+  section.gallery-dl div.gallery div.flower div.image:nth-child(even) {
+    text-align: right;
+  }
+}
+section.gallery-dl div.gallery div.flower div.image + .image {
+  margin-top: 30px;
+}
+section.gallery-dl div.access {
+  text-align: center;
+  position: relative;
+}
+section.gallery-dl div.access div.text h2 {
+  font-size: 27px;
+  line-height: 48px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  position: relative;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  section.gallery-dl div.access div.text h2 {
+    font-size: 60px;
+    line-height: 125px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.gallery-dl div.access div.text h2 {
+    font-size: 53px;
+    line-height: 96px;
+  }
+}
+section.gallery-dl div.access div.text h2::after {
+  position: absolute;
+  content: "";
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 1px;
+  left: 50%;
+  bottom: 25%;
+  transform: translateX(-50%);
+}
+section.gallery-dl div.access div.text div.hall {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  section.gallery-dl div.access div.text div.hall {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+section.gallery-dl div.access div.text div.address {
+  line-height: 23.2px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  section.gallery-dl div.access div.text div.address {
+    font-size: 16px;
+  }
+}
+section.gallery-dl div.access div.text div.mail {
+  line-height: 23.2px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+section.gallery-dl div.access div.text div.map a {
+  line-height: 60px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 16px 82px;
+}
+section.gallery-dl div.contact {
+  text-align: center;
+}
+section.gallery-dl div.contact h2 {
+  font-size: 27px;
+  line-height: 48px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  position: relative;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  section.gallery-dl div.contact h2 {
+    font-size: 60px;
+    line-height: 125px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.gallery-dl div.contact h2 {
+    font-size: 53px;
+    line-height: 96px;
+  }
+}
+section.gallery-dl div.contact h2::after {
+  position: absolute;
+  content: "";
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 1px;
+  left: 50%;
+  bottom: 25%;
+  transform: translateX(-50%);
+}
+section.gallery-dl div.contact div.exhibition a {
+  line-height: 23.2px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 24px 32px;
+}
+@media (min-width: 768px) {
+  section.gallery-dl div.contact div.exhibition a {
+    width: 380px;
+    position: relative;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.gallery-dl div.contact div.exhibition a {
+    font-size: 15px;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  section.gallery-dl div.contact div.exhibition a::before {
+    position: absolute;
+    content: "";
+    background-color: #FFF;
+    width: 120px;
+    height: 1px;
+    right: -50px;
+    bottom: 50%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.gallery-dl div.contact div.exhibition a::before {
+    position: initial;
+  }
+}
+@media (min-width: 768px) {
+  section.gallery-dl div.contact div.exhibition a::after {
+    position: absolute;
+    content: "";
+    background-color: #FFF;
+    width: 15px;
+    height: 1px;
+    transform: rotate(45deg);
+    right: -52px;
+    bottom: 58%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.gallery-dl div.contact div.exhibition a::after {
+    position: initial;
+  }
+}
+section.gallery-dl div.contact div.forvisitor {
+  margin-top: 20px;
+}
+section.gallery-dl div.contact div.forvisitor a {
+  line-height: 23.2px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 24px 32px;
+}
+@media (min-width: 768px) {
+  section.gallery-dl div.contact div.forvisitor a {
+    width: 380px;
+    position: relative;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.gallery-dl div.contact div.forvisitor a {
+    font-size: 15px;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  section.gallery-dl div.contact div.forvisitor a::before {
+    position: absolute;
+    content: "";
+    background-color: #FFF;
+    width: 120px;
+    height: 1px;
+    right: -50px;
+    bottom: 50%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.gallery-dl div.contact div.forvisitor a::before {
+    position: initial;
+  }
+}
+@media (min-width: 768px) {
+  section.gallery-dl div.contact div.forvisitor a::after {
+    position: absolute;
+    content: "";
+    background-color: #FFF;
+    width: 15px;
+    height: 1px;
+    transform: rotate(45deg);
+    right: -52px;
+    bottom: 58%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.gallery-dl div.contact div.forvisitor a::after {
+    position: initial;
+  }
+}/*# sourceMappingURL=240819.css.map */
