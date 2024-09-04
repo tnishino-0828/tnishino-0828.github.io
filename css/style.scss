@@ -102,10 +102,6 @@ h1 {
 }
 
 header {
-  position: fixed;
-  width: 100%;
-  background-color: #FFFFFF;
-  z-index: 2;
   div.headerin {
     display: flex;
     justify-content: space-between;
@@ -120,8 +116,31 @@ header {
       }
     }
     div.pushbarbox {
-      a.button {
+      button.button {
+        cursor: pointer;
+        display: block;
+        background-color: initial;
+        border: none;
         img {}
+        span {
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3) {
+            background-color: #000000;
+            width: 40px;
+            height: 3px;
+            display: block;
+          }
+          &:nth-child(1) {
+            mrgin-top: 8px;
+          }
+          &:nth-child(2) {
+            margin-top: 8px;
+          }
+          &:nth-child(3) {
+            margin-top: 8px;
+          }
+        }
       }
     }
   }
