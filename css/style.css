@@ -113,22 +113,37 @@ header div.headerin {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
+  position: fixed;
+  background-color: #FFFFFF;
+  width: 100%;
+  z-index: 3;
+  padding: 20px 20px 20px 16px;
+}
+@media (min-width: 768px) {
+  header div.headerin {
+    padding: 20px 46px 20px 40px;
+  }
+}
+header div.headerin h1 {
+  line-height: 0;
+}
+header div.headerin h1 a {
+  display: block;
 }
 header div.headerin h1 a img {
-  width: 117px;
-  object-fit: contain;
+  width: 100%;
 }
 header div.headerin div.pushbarbox button.button {
   cursor: pointer;
   display: block;
   background-color: initial;
   border: none;
+  padding: 0;
 }
 header div.headerin div.pushbarbox button.button span:nth-child(1), header div.headerin div.pushbarbox button.button span:nth-child(2), header div.headerin div.pushbarbox button.button span:nth-child(3) {
   background-color: #000000;
-  width: 40px;
-  height: 3px;
+  width: 30px;
+  height: 2px;
   display: block;
 }
 header div.headerin div.pushbarbox button.button span:nth-child(1) {
@@ -144,12 +159,12 @@ header div.headerin div.pushbarbox button.button span:nth-child(3) {
 div.keyvisual video {
   width: 100%;
   height: 100vh;
-  max-height: 505px;
+  max-height: 960px;
   object-fit: cover;
 }
 @media (min-width: 768px) {
   div.keyvisual video {
-    max-height: 600px;
+    max-height: initial;
   }
 }
 
@@ -168,8 +183,9 @@ section.contents {
 }
 section.contents div.pickup div.heading div.container h2 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 25px;
+  letter-spacing: 0;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -221,8 +237,9 @@ section.contents div.feature {
 }
 section.contents div.feature div.heading div.container h2 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 25px;
+  letter-spacing: 0;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -268,12 +285,14 @@ section.contents div.feature div.description {
     gap: 21px;
   }
 }
+section.contents div.feature div.description div.container div.lists div.item {
+  box-shadow: 0 0 8px 4px #ccc;
+}
 section.contents div.feature div.description div.container div.lists div.item div.image {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1607843137);
 }
 section.contents div.feature div.description div.container div.lists div.item div.image img {
   width: 100%;
-  height: 229px;
   object-fit: cover;
 }
 @media (min-width: 768px) {
@@ -307,19 +326,22 @@ section.contents div.feature div.description div.container div.lists div.item di
 }
 section.contents div.feature div.description div.container div.lists div.item div.text div.category {
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
+  letter-spacing: 0;
   line-height: 20px;
 }
 section.contents div.feature div.description div.container div.lists div.item div.text div.comment {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: bold;
+  letter-spacing: 0;
   line-height: 24px;
   margin-top: 16px;
 }
 section.contents div.feature div.description div.container div.lists div.item div.text div.number {
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 20px;
+  letter-spacing: 0;
   text-align: right;
   margin-top: 18px;
 }
@@ -361,8 +383,9 @@ section.contact div.heading {
 }
 section.contact div.heading div.container h2 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 25px;
+  letter-spacing: 0;
   text-align: center;
   color: #FFFFFF;
 }
@@ -391,21 +414,25 @@ section.contact div.mail {
     margin-top: 22px;
   }
 }
+section.contact div.mail div.container div.mailform {
+  padding: 0 8px;
+}
 @media (min-width: 768px) {
   section.contact div.mail div.container div.mailform {
     display: flex;
+    justify-content: space-between;
     gap: 112px;
   }
 }
 section.contact div.mail div.container div.mailform div.text {
   font-size: 14px;
   font-weight: 500;
-  line-height: 21px;
   color: #FFFFFF;
 }
 @media (min-width: 768px) {
   section.contact div.mail div.container div.mailform div.text {
-    flex: 1;
+    width: 45%;
+    line-height: 21px;
   }
 }
 section.contact div.mail div.container div.mailform div.data {
@@ -413,7 +440,7 @@ section.contact div.mail div.container div.mailform div.data {
 }
 @media (min-width: 768px) {
   section.contact div.mail div.container div.mailform div.data {
-    flex: 1;
+    width: 45%;
     margin-top: initial;
   }
 }
@@ -421,13 +448,17 @@ section.contact div.mail div.container div.mailform div.data div.lists div.item 
   font-size: 14px;
   font-weight: 500;
   line-height: 21px;
+  letter-spacing: 0;
+  display: block;
   color: #FFFFFF;
 }
 section.contact div.mail div.container div.mailform div.data div.lists div.item div.input input {
   width: 100%;
+  padding: 10px;
 }
 section.contact div.mail div.container div.mailform div.data div.lists div.item div.input textarea {
   width: 100%;
+  padding: 10px;
 }
 section.contact div.mail div.container div.mailform div.data div.lists div.item + .item {
   margin-top: 16px;
@@ -453,7 +484,7 @@ section.contact div.mail div.container div.mailform div.data div.send_button but
   background-color: #121212;
   border: 1px solid #FFFFFF;
   width: 100%;
-  padding: 8px 0;
+  padding: 12px 0;
 }
 @media (min-width: 768px) {
   section.contact div.mail div.container div.mailform div.data div.send_button button {
