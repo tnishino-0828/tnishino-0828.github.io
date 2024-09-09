@@ -213,25 +213,6 @@ section.contents div.pickup div.slider_lists {
     margin-top: 25px;
   }
 }
-section.contents div.pickup div.slider_lists div.swiper.slider div.swiper-wrapper div.swiper-slide img {
-  height: 156px;
-  object-fit: cover;
-}
-@media (min-width: 768px) {
-  section.contents div.pickup div.slider_lists div.swiper.slider div.swiper-wrapper div.swiper-slide img {
-    height: 240px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  section.contents div.pickup div.slider_lists div.swiper.slider div.swiper-wrapper div.swiper-slide img {
-    height: 198px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1024px) {
-  section.contents div.pickup div.slider_lists div.swiper.slider div.swiper-wrapper div.swiper-slide img {
-    height: 198px;
-  }
-}
 section.contents div.feature {
   margin-top: 100px;
 }
@@ -414,6 +395,11 @@ section.contact div.mail {
     margin-top: 22px;
   }
 }
+@media (min-width: 768px) {
+  section.contact div.mail div.container {
+    width: 1400px;
+  }
+}
 section.contact div.mail div.container div.mailform {
   padding: 0 8px;
 }
@@ -434,6 +420,9 @@ section.contact div.mail div.container div.mailform div.text {
     width: 45%;
     line-height: 21px;
   }
+}
+section.contact div.mail div.container div.mailform div.text p + p {
+  margin-top: 30px;
 }
 section.contact div.mail div.container div.mailform div.data {
   margin-top: 38px;
@@ -514,7 +503,7 @@ footer {
 }
 footer div.footerin div.container div.text {
   font-size: 12px;
-  font-weight: 600;
+  letter-spacing: 0;
   line-height: 18px;
   color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */

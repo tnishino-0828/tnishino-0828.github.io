@@ -214,19 +214,7 @@ section.contents {
         &.slider {
           div.swiper-wrapper {
             div.swiper-slide {
-              img {
-                height: 156px;
-                object-fit: cover;
-                @media (min-width: 768px) {
-                  height: 240px;
-                }
-                @media (min-width: 768px) and (max-width: 991.98px) {
-                  height: 198px;
-                }
-                @media (min-width: 992px) and (max-width: 1024px) {
-                  height: 198px;
-                }
-              }
+              img {}
             }
           }
         }
@@ -383,6 +371,9 @@ section.contact {
       margin-top: 22px;
     }
     div.container {
+      @media (min-width: 768px) {
+        width: 1400px;
+      }
       div.mailform {
         padding: 0 8px;
         @media (min-width: 768px) {
@@ -398,7 +389,11 @@ section.contact {
             width: 45%;
             line-height: 21px;
           }
-          p {}
+          p {
+            &+p {
+              margin-top: 30px;
+            }
+          }
         }
         div.data {
           margin-top: 38px;
@@ -476,7 +471,7 @@ footer {
     div.container {
       div.text {
         font-size: 12px;
-        font-weight: 600;
+        letter-spacing: 0;
         line-height: 18px;
         color: #FFFFFF;
       }
