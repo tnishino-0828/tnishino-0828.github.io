@@ -292,7 +292,7 @@ section.contents div.feature div.description div.container div.lists div.item di
   }
 }
 section.contents div.feature div.description div.container div.lists div.item div.text {
-  border: 2px solid #CCCCCC;
+  outline: 2px solid #CCCCCC;
   padding: 16px;
 }
 @media (min-width: 768px) {
@@ -433,7 +433,7 @@ section.contact div.mail div.container div.mailform div.data {
     margin-top: initial;
   }
 }
-section.contact div.mail div.container div.mailform div.data div.lists div.item span.name {
+section.contact div.mail div.container div.mailform div.data div.lists div.item label.name {
   font-size: 14px;
   font-weight: 500;
   line-height: 21px;
@@ -444,10 +444,12 @@ section.contact div.mail div.container div.mailform div.data div.lists div.item 
 section.contact div.mail div.container div.mailform div.data div.lists div.item div.input input {
   width: 100%;
   padding: 10px;
+  border: none;
 }
 section.contact div.mail div.container div.mailform div.data div.lists div.item div.input textarea {
   width: 100%;
   padding: 10px;
+  border: none;
 }
 section.contact div.mail div.container div.mailform div.data div.lists div.item + .item {
   margin-top: 16px;
